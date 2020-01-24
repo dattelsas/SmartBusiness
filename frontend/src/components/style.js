@@ -54,11 +54,16 @@ export default {
     flex: 1,
     top: 65,
     width: DEVICE_WIDTH,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    flexDirection: 'column',
   },
   text: {
     color: 'white',
     backgroundColor: 'transparent',
   },
+  containerButtons: {
+    flex: 1,
+    width: DEVICE_WIDTH,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+  }
 };

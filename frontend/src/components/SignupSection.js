@@ -11,14 +11,26 @@ export default class SignupSection extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.text}>Crear Cuenta</Text>
-        <Text style={styles.text}>Olvidó su Contraseña?</Text>
-        <Button
-          buttonStyle={styles.fbLoginButton}
-          onPress={() => this.onFbLoginPress()}
-          title="Ingresar con Facebook"
-          color="#3897f1"
-        />
+        <View style={styles.containerButtons}>
+          <Button
+            buttonStyle={styles.fbLoginButton}
+            title="Crear Cuenta"
+            color="#3897f1"
+          />
+          <Button
+            buttonStyle={styles.fbLoginButton}
+            title="Olvidó su Contraseña?"
+            color="#3897f1"
+          />
+        </View>
+        <View style={styles.containerButtons}>
+          <Button
+            buttonStyle={styles.fbLoginButton}
+            onPress={() => this.onFbLoginPress()}
+            title="Ingresar con Facebook"
+            color="#3897f1"
+          />
+        </View>
       </View>
     );
   }
